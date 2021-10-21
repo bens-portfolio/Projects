@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title>CUM CHECK</title>
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+<body>	
+
+	<div class="sectionRight">
+		<div id="upgradeContainer"></div>
+		<div id="shopContainer"></div>
+		<div id="achievementContainer"></div>
+	</div>
+	<div class="sectionLeft">
+		<center>
+			<div class="scoreContainer unselectable">
+				<span id="score">0</span> cumjars<br>
+				<span id="scorepersecond">0</span> cumjars per second
+			</div>
+			<br>
+		<div class="clickerContainer unselectable">
+			<img draggable="false" src="images/cursedcookie.png" height="250px" width="300px" id="clicker" class="cursorpoint" value="PLAY" onclick="display.updateShop(); play_F('audio/a.mp3');">
+		</div>
+			<div id="goldBen" onclick="ass();"></div>
+				<label id="minutes" style="color: white; opacity: .0;"></label><label id="seconds" style="color: white; opacity: .0;" class="unselectable">00</label>
+				<label id="minutes2" style="color: white; opacity: .0;" class="unselectable">00</label><label id="seconds2" class="unselectable" style="color: white; opacity: .0;">00</label>
+			</center>
+		
+			<div class="sectionFooter">
+				<h5>MEME ATTACK</h5>
+				<button id="myBtn">Reset Game</button>
+					<div id="myModal" class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>Are you sure you want to RESET the game?</p>
+							<button onclick="resetGame();">Yes</button>
+							<button onclick="closeit();">No</button>
+						</div>
+					</div>
+			</div>
+	</div>
+
+	
+	<script src="javascript.js"></script>
+	
+</body>
+</HTML>
