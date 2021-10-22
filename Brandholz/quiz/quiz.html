@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizstyle.css">
+    <script src="quizscript.js" defer></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul class="level1">
+                <li>
+                    <a href="../../index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../formular.html">Formular</a>
+                </li>
+                <li>
+                    <a href="#">Mehr</a>
+                    <ul class="level2">
+                        <li><a href="../jquery/jquery.html">Shoppage</a></li>
+                        <li>
+                            <a href="../quiz/quiz.html">Quizpage</a>
+                            <ul class="level3">
+                                <li><a id="end">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+        </nav>
+    </div>
+    
+    <div class="quiz">
+        <div id="header">
+        <h1>My Quiz</h1>
+        <h2>Name:</h2>
+            <input type="text" id="customname">
+            <button type="submit" onclick="getInput();">Test</button>
+            </div>
+
+        <div class="question1">
+            <h2>The best living animal</h2>
+            <input type="radio" id="a1" name="question1" value="Penguin">
+            <label for="a1">Penguin</label><br>
+            <input type="radio" id="b1" name="question1" value="Duck">
+            <label for="b1">Duck</label><br>
+            <input type="radio" id="c1" name="question1" value="Tiger">
+            <label for="c1">Tiger</label><br>
+            <input type="radio" id="d1" name="question1" value="Flamingo">
+            <label for="d1">Flamingo</label><br><br>
+        </div>
+
+    <div class="question2">
+            <h2>The best meal is..</h2>
+            <input type="radio" id="a2" name="question2" value="Meat">
+            <label for="a2">..with meat</label><br>
+            <input type="radio" id="b2" name="question2" value="Spicy">
+            <label for="b2">..spicy</label><br>
+            <input type="radio" id="c2" name="question2" value="Sweet">
+            <label for="c2">..sweet</label><br>
+            <input type="radio" id="d2" name="question2" value="Stinky">
+            <label for="d2">..stinky</label><br><br>
+    </div>
+
+    <div class="question3">
+        <h2>Idk.. Guess</h2>
+        <input type="radio" id="a3" name="question3" value="Random">
+        <label for="a3">Random Words</label><br>
+        <input type="radio" id="b3" name="question3" value="Placeholder">
+        <label for="b3">Placeholder</label><br>
+        <input type="radio" id="c3" name="question3" value="Monster">
+        <label for="c3">Spaghetti Monster</label><br>
+        <input type="radio" id="d3" name="question3" value="Yes">
+        <label for="d3">Yes</label><br><br>
+</div>
+
+    <br>
+
+    <div class="results">
+    <input type="submit" value="Submit" onclick="answer();">
+    <p id="results"></p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

@@ -87,7 +87,7 @@
 .close:focus {
 	color: #000;
 	text-decoration: none;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 /* Button */
@@ -95,7 +95,8 @@ button {
 	-webkit-filter: drop-shadow(-10px 10px 3px white);
 	filter: drop-shadow(0px 0px 10px white);
 	font-family: 'Pangolin', cursive;
-	cursor: url("./images/owo.png"), pointer;
+	cursor: pointer;
+	
 	
 }
 
@@ -105,9 +106,6 @@ h5 {
 	font-family: 'Pangolin', cursive;
 }
 
-html {
- 	cursor: url("./images/uwu.png"), default;
-}
 
 body {
 	background:url("./images/background.jpg");
@@ -131,6 +129,7 @@ body {
 .sectionRight {
 	float: right;
 	width: 20%;
+	cursor: pointer;
 }
 
 .scoreContainer {
@@ -153,6 +152,7 @@ body {
 	-webkit-filter: drop-shadow(-10px 10px 3px black);
 	filter: drop-shadow(-10px 10px 3px black);
 	-webkit-touch-callout: none;
+	cursor: pointer;
 }
 
 .clickerContainer img:hover { transform: scale(1.10); }
@@ -164,39 +164,39 @@ body {
 	border-radius: 10px;
 	width: 100%;
 	margin: 10px 0px 10px 0px;
-	cursor: url("./images/owo.png"), pointer;
+	
 	box-shadow: 10px 10px 50px black	 
 }
 
 .shopButton:hover {
 	background-color: #c7c7c7;
 	
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton #image {
 	width: 25%;
-	cursor: url("./images/owo.png"), pointer;
+	
 	filter: drop-shadow(0px 1px 3px black);
 }
 
 .shopButton img {
 	height: 64px;
 	width: 64px;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton #nameAndCost p {
 	margin: 0px;
 	width: 60%;
 	font-family: 'Pangolin', cursive;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton #nameAndCost p:first-of-type {
 	font-size: 24px;
 	font-family: 'Pangolin', cursive;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton #amount {
@@ -213,39 +213,39 @@ body {
 	border-radius: 10px;
 	width: 100%;
 	margin: 10px 0px 10px 0px;
-	cursor: url("./images/owo.png"), pointer;
+	
 	box-shadow: 10px 10px 50px black	 
 }
 
 .shopButton2:hover {
 	background-color: #d7d7d7;
 	
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton2 #image {
 	width: 25%;
-	cursor: url("./images/owo.png"), pointer;
+	
 	filter: drop-shadow(0px 1px 3px black);
 }
 
 .shopButton2 img {
 	height: 64px;
 	width: 64px;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton2 #nameAndCost p {
 	margin: 0px;
 	width: 60%;
 	font-family: 'Pangolin', cursive;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton2 #nameAndCost p:first-of-type {
 	font-size: 24px;
 	font-family: 'Pangolin', cursive;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 .shopButton2 #amount {
@@ -270,7 +270,7 @@ body {
 }
 
 .cursorpoint {
-	cursor: url("./images/owo.png"), pointer;
+	
 }
 
 #upgradeContainer {
@@ -284,7 +284,7 @@ body {
 #upgradeContainer img {
 	height: 64px;
 	width: 65px;
-	cursor: url("./images/owo.png"), pointer;
+	
 	-webkit-filter: drop-shadow(-10px 10px 3px white);
 	filter: drop-shadow(-10px 10px 20px white);
 }
@@ -309,5 +309,5 @@ body {
 #goldBen img {
 	height: 50px;
 	width: 50px;
-	cursor: url("./images/owo.png"), pointer;
+	
 }
