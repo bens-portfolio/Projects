@@ -16,6 +16,7 @@ function play_F(file){
   }
 };
 
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
