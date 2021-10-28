@@ -134,9 +134,15 @@ padding:0 1em;
     font-size: 30px;
 }
 
-.image img {
+.image img{
     height:500px;
     transition: opacity 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 610px) { 
+.image img {
+    height:auto;
+}
 }
 
 .alert {
@@ -180,4 +186,14 @@ padding:0 1em;
 
 #text-alert {
     text-align:left;
+}
+
+@media only screen and (max-width: 780px) { 
+    .quiz {
+    width: 100%;
+    }
+
+    .navbar {
+        position:relative;
+    }
 }

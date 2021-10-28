@@ -143,3 +143,13 @@ transition: filter 1s ease-in-out;
 .hover-shadow:hover {
     filter: drop-shadow(0 0 0.75rem black);
 }
+
+@media only screen and (max-width: 780px) { 
+    .quiz {
+    width: 100%;
+    }
+
+    .navbar {
+        position:relative;
+    }
+}
