@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
 
+
 body, html {
 scroll-behavior: smooth;
 font-family: 'Georama', sans-serif;
@@ -23,71 +24,73 @@ button, label, input {
     background-color: black;
     padding:0 1em;
     }
-    
-    .navbar ul {
-     padding: 0;
-     margin: 0;
-    }
-    .navbar li {
-     padding: 0;
-     margin: 0;
-     display: inline-block;
-     /* position: relative; */
-    }
-    
-    .navbar .level1 li:hover ul.level2 {
-        display: block;
-    }
-    
-    .navbar ul.level2 {
-        position: absolute;
-        display: none;
-        top: 100%;
-    }
-    
-    .navbar ul.level2 li {
-        position: relative;
-    }
-    
-    .navbar ul.level3 {
-        position: absolute;
-        display: none;
-        width:100%;
-        top:0%;
-        left: 100%;
-    }
-    
-    
-    .navbar .level2 li:hover ul.level3 {
-        display: block;
-    }
-    
-    .navbar .level2 li {
-        display: block;
-    }
-    
-    .navbar a{
-        padding:1em;
-        display: block;
-        color:white;
-        text-decoration: none;
-        background-color:darkslategray;
-    }
-    
-    .navbar a:hover {
-        padding:1em;
-        text-decoration: none;
-        color:white;
-        background-color:gray;
-        transition: all 0.3s ease-in-out;
-    }
+
+
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    /* position: relative; */
+}
+
+.navbar .level1 li:hover ul.level2 {
+    display: block;
+}
+
+.navbar ul.level2 {
+    position: absolute;
+    display: none;
+    top: 100%;
+}
+
+.navbar ul.level2 li {
+    position: relative;
+}
+
+.navbar ul.level3 {
+    position: absolute;
+    display: none;
+    width:100%;
+    top:0%;
+    left: 100%;
+}
+
+
+.navbar .level2 li:hover ul.level3 {
+    display: block;
+}
+
+.navbar .level2 li {
+    display: block;
+}
+
+.navbar a{
+    padding:1em;
+    display: block;
+    color:white;
+    text-decoration: none;
+    background-color:darkslategray;
+}
+
+.navbar a:hover {
+    padding:1em;
+    text-decoration: none;
+    color:white;
+    background-color:gray;
+    transition: all 0.3s ease-in-out;
+}
 
 h1 {
 margin: 0;
 }
 
 .quiz {
-    width:50%;
+    width: 50%;
     text-align: center;
     margin: 0 auto;
     font-size: 30px;
@@ -95,26 +98,36 @@ margin: 0;
 
 }
 
+@media only screen and (max-width: 780px) { 
+    .quiz {
+    width: 100%;
+    }
+
+    .navbar {
+        position:relative;
+    }
+}
+
 .question1 {
-    padding: 20px;
+
     text-align: left;
 
 }
 
 .question2 {
-    padding: 20px;
+
     text-align: left;
 
 }
 
 .question3 {
-    padding: 20px;
+
     text-align: left;
 
 }
 
 #header {
-    padding: 20px;
+
 background-color: gray;
 }
 
