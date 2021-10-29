@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "Github",
+			"path": "../../../../../Github"
+		},
+		{
+			"name": "Wordpress",
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../MySQL"
+		},
+		{
+			"path": "../../../../../../../Downloads/PHP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Github",
+		"liveServer.settings.port": 5501
+	}
+}
