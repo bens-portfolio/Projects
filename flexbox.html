@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+    
+    <div id="page">
+        <header id="header">Header</header>
+        <div id="content">
+            <nav id="sidebar">AAaaa lorem1000</nav>
+            <main id="main">
+                <h1>Hallo</h1>
+                <p>Content</p>
+            </main>
+        </div>
+        <footer id="footer">footer</footer>
+    </div>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        #page {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #header {
+            background-color: red;
+        }
+        #content {
+            display: flex;
+            flex-direction: column;    
+            flex-grow: 1;
+            background-color: blue;
+        }
+        #footer {
+            background-color: green;
+        }
+        #sidebar {
+            background-color: yellow;
+            order: 1;
+        }
+        #main {
+            background-color: white;
+            flex-grow: 1;
+        }
+        @media (min-width: 800px) {
+            #content {
+                flex-direction: row;    
+            }
+            #sidebar {
+                order: 0;
+            }
+        }
+    </style>
+</body>
+</html>
