@@ -1,0 +1,486 @@
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*my own css start*/
+
+/*General Stuff und so*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap');
+h1,h2,h3,h4,h5 {font-weight: lighter;letter-spacing: 0.1em;}
+body {overflow-x:hidden;overflow-y:show;background-color: #4b5a64;}
+a {cursor:pointer;}
+html, body {padding:0; margin:0;}
+a {color: white;text-decoration: none;}
+a:hover {transition:0.5s;color: wheat !important;text-decoration: none;}
+button {background:none;border:none;}
+
+/* Navbar */
+#white{
+  color:white;
+}
+
+.navbar {
+  position:sticky;
+  z-index:69;
+  top:0;
+  color:white;
+  background-color:#4c5966;
+}
+
+.navbar a:visited {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.navcontainer {
+  background:#4b5a64;
+  font-family: 'Rubik', sans-serif;
+  z-index: 99;
+  font-size: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right:80px;
+  gap:105px;
+  height:75px; 
+}
+
+.logo {
+  width:350px;
+  height:auto;
+  background-image:url("/img/Logo.png");
+  background-size:100% 100%;
+  margin-left:40px;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 925px) {
+  .logo {
+    width:250px;
+    height:40px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .logo {
+  display:none;
+  }
+}
+
+/* Wrapper & Container */
+.wrap {height:1080px;width:100%;display:flex;
+flex-direction:column;align-items:center;justify-content:center;}
+.content {display:flex;align-items:center;justify-content:center;}
+
+.tilex {color:white;height:1080px;width:100%;}
+.tile1 {color:white;height:1080px;width:100%;}
+.tile2 {color:white;height:1080px;width:100%;}
+.tile3 {color:white;height:1080px;width:100%;}
+.tile4 {color:white;height:1080px;width:100%;}
+
+/* Background Image Properties */
+.img img {
+  max-width: 100%; 
+  min-width:100%; 
+  height:75px; 
+  position:absolute; 
+  z-index:-99; 
+  max-height:100%;
+}
+
+.tile1 .img img {  min-height:1080px; object-fit:cover;  position:absolute; z-index:-99; }
+.tile2 .img img {  min-height:1080px; object-fit:cover;  position:absolute; z-index:-99; }
+.tile3 .img img {  min-height:1080px; object-fit:cover;  position:absolute; z-index:-99; }
+.tile4 .img img {  min-height:1080px; object-fit:cover;  position:absolute; z-index:-99; }
+
+
+/* Foreground Image Properties */
+.tilex .img img {  min-height:1080px; object-fit:cover;  position:absolute; z-index:-99; }
+
+.tile1 .fg-keyboard img {  height:250px; object-fit:contain; position:absolute; z-index:-97; opacity:70%;}
+.tile1 .fg-palette img { height:1000px; position:absolute; z-index:-97; opacity:70%;}
+.fg-palette { position:absolute; margin-top:300px; right: 820px; }
+.fg-keyboard { position:absolute; margin-top:300px; left:10px; }
+
+.tile2 .fg-headphones img {  height:400px; object-fit:contain; position:absolute; z-index:-97; opacity:70%;}
+.tile2 .fg-scissor img { height:1000px; position:absolute; z-index:-97; opacity:70%;}
+.fg-scissor {position:absolute;margin-top:300px; right: 890px;}
+.fg-headphones {position:absolute;margin-top:300px; left:110px;}
+
+.fg-image > p, .fg-image > a {white-space: nowrap;opacity:50%;}
+.fg-image > img {position:absolute;top:2510px;margin-left:210px;height:400px;
+width:400px;clip-path:polygon(0 10%, 45% 100%, 100% 35%);}
+@media only screen and (max-width: 1000px) {
+  .fg-image > img {z-index: -98;height:700px;width:700px;top:2340px;margin-left:0px;opacity:50%;}
+}
+
+.tile4 .fg-triangle1 img {  height:1080px; object-fit:contain; position:absolute; z-index:-97; opacity:70%;}
+.tile4 .fg-triangle2 img { height:1080px; position:absolute; z-index:-97; opacity:70%;}
+.tile4 .fg-triangle3 img {  height:1080px; object-fit:contain; position:absolute; z-index:-97; opacity:70%;}
+.tile4 .fg-triangle4 img { height:1080px; position:absolute; z-index:-97; opacity:70%;}
+.fg-triangle1 {position:absolute;margin-top:100px;left:950px;}
+.fg-triangle2 {position:absolute;margin-bottom:300px;right:950px;}
+.fg-triangle3 {position:absolute;}
+.fg-triangle4 {position:absolute;}
+
+.arrow-down {margin-top:600px;position:absolute;}
+
+
+/* Slider */
+
+#slider {margin-top:-450px;left:-240px;position:absolute;width:500px;height:300px;}
+
+.image {position:absolute;margin-top:350px;}
+
+#sliderpointrow {margin-top:-100px;position:absolute;}
+#sliderpoint1, #sliderpoint2, #sliderpoint3 {fill: gray;position:relative;padding:10px;}
+
+#shoppingname {text-align: center;color:white;position:absolute;white-space: nowrap;
+margin-top: 50px;right:-80px;font-size: 40px;font-family: 'Rubik', sans-serif;}
+
+.buttonswitch {margin-bottom:50px;}
+#switchleft {margin-top:-220px;right:340px;position:absolute;}
+#switchright {margin-top:-220px;left:360px;position:absolute;}
+@media only screen and (max-width: 1000px) {
+  #switchleft {margin-top:-15px;right:150px;;}
+  #switchright {margin-top:-15px;left:150px;;}
+}
+
+
+/* Footer */
+
+.footer {color:white;background-color:#4c5966;}
+.footercontainer {font-family:'Rubik',sans-serif;z-index:99;font-size:20px;display:flex;
+flex-direction:row;justify-content:flex-end;align-items:center;margin-right:50px;gap:105px;height:75px;}
+
+/* Text */
+
+#headline1 {margin-bottom:150px;word-spacing:-20px;
+font-size:40px;text-align:center;font-family:'Rubik Mono One',sans-serif;}
+#headline2 {color:#ffcc00;margin-bottom: 450px;word-spacing:-20px;
+font-size:30px;text-align: center;font-family:'Rubik Mono One',sans-serif;}
+#headline3 {color:white;margin-bottom: 500px;margin-right: 600px;word-spacing:-20px;
+font-size:30px;text-align: left;font-family: 'Rubik Mono One', sans-serif;}
+@media only screen and (max-width: 1000px) {
+  #headline3 {margin-right: 150px;}
+}
+#headline4 {color:#ffcc00;margin-bottom:900px;word-spacing:-20px;font-size:30px;
+text-align: center;font-family: 'Rubik Mono One', sans-serif;}
+#headline5 {position:absolute;color:#ffcc00;margin-bottom:750px;left:100px;
+word-spacing:-20px;font-size:40px;text-align: center;font-family: 'Rubik Mono One', sans-serif;}
+#headline6 {position:absolute;color:white;margin-bottom:300px;right:100px;
+word-spacing:-20px;font-size:30px;text-align: left;font-family: 'Rubik Mono One', sans-serif;}
+
+
+#text1 {position: absolute;margin-bottom: 270px;margin-right: 315px;
+font-size: 26px;font-family: 'Rubik', sans-serif;}
+@media only screen and (max-width: 600px) {
+  #text1 {margin-right:210px;}
+}
+@media only screen and (max-width: 510px) {
+  #text1 {margin-bottom:300px;}
+}
+#text2 {margin-bottom:40px;position: absolute;margin-left: 275px;
+  font-size:26px;font-family: 'Rubik', sans-serif;}
+@media only screen and (max-width: 600px) {
+  #text2 {margin-bottom:0px;margin-left: 180px;}
+}
+#text3 {color:white;position: absolute;text-align: center;
+margin-bottom: -300px;font-size:20px;font-family: 'Rubik', sans-serif;}
+#text4 {color:white;position: absolute;text-align: center;margin-bottom: 200px;
+font-size:20px;font-family: 'Rubik', sans-serif;}
+#text5 {color:white;position: absolute;text-align: center;margin-bottom: 70px;
+font-size:20px;font-family: 'Rubik', sans-serif;}
+#text6 {color:white;position: absolute;text-align: center;margin-bottom: -100px;
+font-size:20px;font-family: 'Rubik', sans-serif;}
+#text7 {color:white;position: absolute;text-align: left;margin-top: 650px;margin-right: 480px;
+font-size:20px;font-family: 'Rubik', sans-serif;margin-bottom: 700px;}
+@media only screen and (max-width: 1000px) {
+#text7 {margin-right: 0px;}
+}
+#text8 {color:white;position: absolute;text-align: left;margin-top: 680px;right:69px;font-size:20px;
+font-family: 'Rubik', sans-serif;margin-bottom: 700px;}
+#text9 {color:white;position: absolute;text-align: left;margin-top: 1150px;right:90px;
+font-size:24px;font-family: 'Rubik', sans-serif;margin-bottom: 700px;}
+
+/* contact page */
+label {position:absolute;display: block;width:100%;color:white;word-spacing:-20px;
+  font-size:24px;text-align: left;font-family: 'Rubik Mono One', sans-serif;
+}
+input{position:absolute;background:#285751;border:5px solid #285751;border-radius: 10px;
+  color:white;font-size:24px;font-family: 'Rubik', sans-serif;}
+
+.clear {display: inline-block;clear:both;}
+
+#contacticons {right:440px;position:absolute;}
+#icon1 {position:absolute;margin-top:390px;height:50px;width:200px;}
+#icon2 {position:absolute;height:50px;margin-left:194px;width:200px;margin-top:500px;}
+#name2 {margin-top:50px;left:100px;}
+#email2 {margin-top:300px;left:100px;}
+#message2 {margin-top:500px;left:100px;}
+#submit {left:100px;margin-top:950px;background:#6c7faa;border:5px solid #6c7faa;height:50px;
+width:270px;font-family: 'Rubik Mono One', sans-serif;font-size:24px;}
+
+input#name {margin-top:150px;left:100px;}
+input#email {margin-top:375px;left:100px;width:320px;}
+input#message {left:100px;margin-top:700px;width:500px;height:130px;}
+
+
+/*my own css end*/
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
