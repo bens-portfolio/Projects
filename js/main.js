@@ -1,5 +1,5 @@
 var picturescounter = 0;
-var pictures = ['/img/lorempicsum1.jpeg', '/img/lorempicsum2.jpeg', '/img/lorempicsum3.jpeg', ];
+var pictures = ['img/lorempicsum1.jpeg', 'img/lorempicsum2.jpeg', 'img/lorempicsum3.jpeg', ];
 var sliderpoints = ['#sliderpoint1', '#sliderpoint2', '#sliderpoint3', ]
 var names = ['Projekt 1', 'Projekt 2', 'Projekt 3', ];
 
