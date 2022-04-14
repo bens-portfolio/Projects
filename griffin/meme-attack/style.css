@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+/* Every Element (Only Uses Scrollbar) */
+* {
+	scrollbar-width: none;  
+	scrollbar-width: thin; 
+	scrollbar-color: grey lightgrey; 
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+	font-family: 'Pangolin', cursive;
+}
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 1.6em;
+    right: 100%;
+    padding: 4px 4px 4px 8px;
+    color: #222;
+    white-space: nowrap; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;  
+    -moz-box-shadow: 0px 0px 4px #222;  
+    -webkit-box-shadow: 0px 0px 4px #222;  
+	box-shadow: 0px 0px 4px #222;  
+    background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f8f8f8),color-stop(1, #cccccc));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -ms-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -o-linear-gradient(top, #f8f8f8, #cccccc);
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
+
+.pseudo-tooltip-wrapper {
+    /*This causes the wrapping element to be the same size as what it contains.*/
+    display: inline-block;
+}
+
+/* Textbox */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Textbox Content */
+.modal-content {
+  background-color: white;
+  margin: auto;  
+  padding: 20px;
+  border: 10px solid #888;
+  width: 30%;
+  font-family: 'Pangolin', cursive;
+  box-shadow: 5px 10px 18px black;
+  color: transparent;
+ text-shadow: 0 0 0 black;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	
+}
+
+/* Button */
+button {
+	-webkit-filter: drop-shadow(-10px 10px 3px white);
+	filter: drop-shadow(0px 0px 10px white);
+	font-family: 'Pangolin', cursive;
+	cursor: pointer;
+	
+	
+}
+
+h5 {
+	-webkit-filter: drop-shadow(-10px 10px 3px white);
+	filter: drop-shadow(0px 0px 10px white);
+	font-family: 'Pangolin', cursive;
+}
+
+
+body {
+	background:url("./images/background.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+}
+
+
+
+.sectionLeft {
+	float: left;
+	width: 80%;
+	position:fixed;
+}
+
+.sectionRight {
+	float: right;
+	width: 20%;
+	cursor: pointer;
+}
+
+.scoreContainer {
+	background-color: rgb(238,238,238, 0.6);
+	width: 50%;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-filter: drop-shadow(-10px 10px 3px black);
+	filter: drop-shadow(-10px 10px 3px black);
+	font-family: 'Pangolin', cursive;
+	color: transparent;
+	text-shadow: 0 0 0 black;
+}
+
+
+
+.clickerContainer img {
+	position: relative;
+	transition: all .2s ease-in-out;
+	-webkit-filter: drop-shadow(-10px 10px 3px black);
+	filter: drop-shadow(-10px 10px 3px black);
+	-webkit-touch-callout: none;
+	cursor: pointer;
+}
+
+.clickerContainer img:hover { transform: scale(1.10); }
+.clickerContainer img:active { transform: scale(0.99); }
+
+.shopButton {
+	background-color: #b5b5b5;
+	transition: all .2 ease-in-out;
+	border-radius: 10px;
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+	
+	box-shadow: 10px 10px 50px black	 
+}
+
+.shopButton:hover {
+	background-color: #c7c7c7;
+	
+	
+}
+
+.shopButton #image {
+	width: 25%;
+	
+	filter: drop-shadow(0px 1px 3px black);
+}
+
+.shopButton img {
+	height: 64px;
+	width: 64px;
+	
+}
+
+.shopButton #nameAndCost p {
+	margin: 0px;
+	width: 60%;
+	font-family: 'Pangolin', cursive;
+	
+}
+
+.shopButton #nameAndCost p:first-of-type {
+	font-size: 24px;
+	font-family: 'Pangolin', cursive;
+	
+}
+
+.shopButton #amount {
+	font-size: 48px;
+	color: #595959;
+	font-family: 'Pangolin', cursive;
+	width: 15%;
+}
+
+.shopButton2 {
+	opacity: 0.5;
+	background-color: #c8c8c8;
+	transition: all .2 ease-in-out;
+	border-radius: 10px;
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+	
+	box-shadow: 10px 10px 50px black	 
+}
+
+.shopButton2:hover {
+	background-color: #d7d7d7;
+	
+	
+}
+
+.shopButton2 #image {
+	width: 25%;
+	
+	filter: drop-shadow(0px 1px 3px black);
+}
+
+.shopButton2 img {
+	height: 64px;
+	width: 64px;
+	
+}
+
+.shopButton2 #nameAndCost p {
+	margin: 0px;
+	width: 60%;
+	font-family: 'Pangolin', cursive;
+	
+}
+
+.shopButton2 #nameAndCost p:first-of-type {
+	font-size: 24px;
+	font-family: 'Pangolin', cursive;
+	
+}
+
+.shopButton2 #amount {
+	font-size: 48px;
+	color: #595959;
+	font-family: 'Pangolin', cursive;
+	width: 15%;
+}
+
+.sectionFooter {
+	margin-top: 10%;
+}
+
+.unselectable {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+	-moz-user-select: none;
+    -ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.cursorpoint {
+	
+}
+
+#upgradeContainer {
+	transition: all .2 ease-in-out;
+	border-radius: 10px;
+	width: 100%;
+	background-color: #c3b9b7;
+	border-radius: 10px;
+}
+
+#upgradeContainer img {
+	height: 64px;
+	width: 65px;
+	
+	-webkit-filter: drop-shadow(-10px 10px 3px white);
+	filter: drop-shadow(-10px 10px 20px white);
+}
+
+#achievementContainer {
+	background-color: #b5b5b5;
+	transition: all .2 ease-in-out;
+	border-radius: 10px;
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+	-webkit-filter: drop-shadow(-10px 10px 3px black);
+	filter: drop-shadow(-10px 10px 20px black);
+}
+
+#achievementContainer img {
+	height: 64px;
+	width: 64px;
+	-webkit-filter: drop-shadow(-10px 10px 3px black);
+	filter: drop-shadow(-10px 10px 20px black);
+}
+
+#goldBen img {
+	height: 50px;
+	width: 50px;
+	
+}

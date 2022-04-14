@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 10px;
+
+    }
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    border-style: solid;
+    background-image: url("../images/background.png") ;
+    
+    }
+    
+body {
+font-family: 'Georama', sans-serif;
+font-size: 1.5em;
+ }
+
+img {
+  
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+    float:left;
+
+}
+
+
+div img:hover{
+filter: grayscale(9%);
+
+}
+/* 
+div, img  {
+    padding:10px;
+} */
+
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-weight: bold;
+}
+h2 {
+    color: red;
+}
+
+.imgpadding {
+    padding-top: 3;
+}
